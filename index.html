@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ヘビゲーム</title>
+<style>
+  body { display:flex; flex-direction:column; align-items:center; font-family:sans-serif; }
+  #game { display:grid; margin-top:20px; }
+  .cell { width:20px; height:20px; border:1px solid #ccc; box-sizing:border-box; }
+  .snake { background-color: green; }
+  .fruit { background-color: red; }
+  #controls { margin-top:10px; }
+</style>
+</head>
+<body>
+<h1>ヘビゲーム</h1>
+<div>
+  グリッドサイズ: <input type="number" id="gridSize" value="16" min="8" max="64">
+  果物の数: <input type="number" id="fruitCount" value="1" min="1" max="10">
+  <button id="startBtn">スタート</button>
+</div>
+<div id="score">スコア: 0</div>
+<div id="game"></div>
+
+<script src="main.js"></script>
+</body>
+</html>
